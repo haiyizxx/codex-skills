@@ -6,6 +6,8 @@ A small collection of OpenAI Codex skills.
 
 - [Code Simplifier](code-simplifier/) - simplify and refactor recently changed
   code without changing behavior.
+- [Karpathy Guidelines](karpathy-guidelines/) - keep coding-agent changes
+  cautious, simple, surgical, and verifiable.
 
 ## Code Simplifier
 
@@ -29,22 +31,27 @@ It helps Codex run a surgical cleanup pass:
 
 ## Install
 
-Copy the skill directory into your Codex skills folder:
+Copy any skill directory into your Codex skills folder:
 
 ```bash
 mkdir -p ~/.codex/skills
-cp -R code-simplifier ~/.codex/skills/
+cp -R code-simplifier karpathy-guidelines ~/.codex/skills/
 ```
 
-Then invoke it in Codex:
+Then invoke a skill in Codex:
 
 ```text
 Use $code-simplifier to simplify my recent code changes without changing behavior.
+Use $karpathy-guidelines while making this code change.
 ```
 
 ## Contents
 
 ```text
+karpathy-guidelines/
+├── SKILL.md
+└── agents/
+    └── openai.yaml
 code-simplifier/
 ├── SKILL.md
 └── agents/
