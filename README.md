@@ -1,7 +1,13 @@
-# Code Simplifier Skill
+# Codex Skills
 
-An OpenAI Codex skill for simplifying and refactoring recently changed code
-without changing behavior.
+A small collection of OpenAI Codex skills.
+
+## Skills
+
+- [Code Simplifier](code-simplifier/) - simplify and refactor recently changed
+  code without changing behavior.
+
+## Code Simplifier
 
 This Codex version is inspired by Anthropic's public
 [code-simplifier agent prompt](https://github.com/anthropics/claude-plugins-official/blob/main/plugins/code-simplifier/agents/code-simplifier.md),
